@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/criar_continentes" method="post">
+    <form action="/criar_paises" method="post">
     @csrf
         <label for="name">Nome:</label>
         <input type="text" name="name">

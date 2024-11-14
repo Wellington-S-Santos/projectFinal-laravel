@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create("continentes", function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->string("decricao");
+            $table->string("descricao");
             $table->float("tamanho");
             $table->timestamps();
 
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('continentes');
     }
 };
